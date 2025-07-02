@@ -57,7 +57,7 @@ test.describe('JWT Decoder Tests', () => {
     });
 
     await test.step('Paste the secret in the Secret text area', async () => {
-      await homePage.fillSecret(testData.secret);
+      await homePage.fillSecretDecoder(testData.secret);
     });
 
     await test.step('Verify if you are getting "Signature Verified" above the Encoded Value text area', async () => {
@@ -75,7 +75,9 @@ test.describe('JWT Decoder Tests', () => {
 
     await test.step('Assert if changing the secret changes the token but the payload remains the same.', async () => {
         const originalPayload = await homePage.getDecodedPayloadText();
-        await homePage.fillSecret(testData.newSecret);
+        await homePage.clickJwtEncoderTab();
+        await homePage.fillSecretEncoder(testData.newSecret);
+        await homePage.clickJwtDecoderTab();
         const newToken = await homePage.getEncodedValue();
         expect(newToken).not.toEqual(originalToken);
         const newPayload = await homePage.getDecodedPayloadText();

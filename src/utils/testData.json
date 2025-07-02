@@ -1,5 +1,5 @@
 {
     "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJiIjoyLCJjIjozLCJpYXQiOjE2OTYzOTc5Mjd9.6S9s1qxsu454fCUtOOME3Y_LLw7jq1owBleccDmPwvo",
     "secret": "helloworld",
-    "newSecret": "newsecret"
+    "newSecret": "newsecretnewsecretnewsecretnewsecret"
 }
