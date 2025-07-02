@@ -1,0 +1,21 @@
+{
+  "name": "jwtdecoder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report reports"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "JWT Website Automation Testing with Playwright and TypeScript using Page Object Model",
+      "devDependencies": {
+      "@playwright/test": "^1.53.2",
+      "@types/node": "^24.0.10",
+      "typescript": "^5.0.0"
+    }
+}
