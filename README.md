@@ -9,7 +9,7 @@ To set up the project, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com-personal:imjakir/jwtdecoder.git
    cd jwtdecoder
    ```
 
