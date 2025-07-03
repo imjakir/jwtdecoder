@@ -83,7 +83,3 @@ For more detailed information on Playwright, visit the [official Playwright docu
 ## Author
 
 JAKIR
-
-## License
-
-This project is for educational and testing purposes. Please ensure compliance with JWT.io's terms of service when running these tests.

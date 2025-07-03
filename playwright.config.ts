@@ -3,6 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './src/tests',
   timeout: 30 * 1000,
+  fullyParallel: true,
   use: {
     headless: true,
     viewport: { width: 1366, height: 768 },

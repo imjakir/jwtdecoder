@@ -1,5 +1,35 @@
 {
     "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJiIjoyLCJjIjozLCJpYXQiOjE2OTYzOTc5Mjd9.6S9s1qxsu454fCUtOOME3Y_LLw7jq1owBleccDmPwvo",
     "secret": "helloworld",
-    "newSecret": "newsecretnewsecretnewsecretnewsecret"
+    "newSecret": "newsecretnewsecretnewsecretnewsecret",
+    "incorrectSecret": "wrongsecretwrongsecretwrongsecretwrongsecret",
+    "customHeader": {
+        "alg": "HS256",
+        "typ": "JWT"
+    },
+    "customPayload": {
+        "sub": "123456789056",
+        "name": "sumit kumar",
+        "admin": true
+    },
+    "encoderSecret": "mysecretkeymysecretkeymysecretkeymysecretkey",
+    "modifiedPayload": {
+        "sub": "987654321",
+        "name": "Jane Smith",
+        "admin": false,
+        "role": "user"
+    },
+    "hs512Header": {
+        "alg": "HS512",
+        "typ": "JWT"
+    },
+    "encoderSecret512": "mysecretkeymysecretkeymysecretkeymysecretkeymysecretkeymysecretmy",
+    "specialCharPayload": {
+        "name": "José María",
+        "emoji": "🚀✨🎉",
+        "chinese": "你好世界",
+        "arabic": "مرحبا بالعالم",
+        "specialChars": "!@#$%^&*()_+-=[]{}|;:,.<>?",
+        "longString": "This is a very long string that contains many characters to test the handling of large text data in JWT payload and see if the application can handle it properly without any issues or truncation problems that might occur during encoding and decoding processes"
+    }
 }
